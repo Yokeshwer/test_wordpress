@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  wordpress:
+    build: .
+    ports:
+      - "80:80"
+    environment:
+      DB_NAME: sample
+      DB_USER: admin
+      DB_HOST: database-2.c5aciluajqvk.us-east-1.rds.amazonaws.com
+      DB_PASSWORD: wordpress
+
+
+
