@@ -23,8 +23,9 @@ RUN chown -R www-data:www-data /var/www/html \
     && chmod -R 755 /var/www/html
 
 EXPOSE 80
-RUN  service php8.1-fpm restart
+CMD ["sh", "-c", "service php8.1-fpm restart"]
+#RUN  service php8.1-fpm restart
 #CMD ["nginx", "-g", "daemon off;","&&","service","php8.1-fpm" ,"restart"]
-#CMD ["sh", "-c", "service php8.1-fpm restart"]
 
-CMD ["nginx", "-g", "daemon off;"]
+
+#CMD ["nginx", "-g", "daemon off;"]
