@@ -1,7 +1,7 @@
 [
     {
       "name": "wordpress",
-      "imageUri": "536419908864.dkr.ecr.us-east-1.amazonaws.com/wordpress:latest"
+      "imageUri": "536419908864.dkr.ecr.us-east-1.amazonaws.com/terraform_wordpress:latest"
     }
    
   ]
