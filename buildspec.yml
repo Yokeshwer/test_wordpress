@@ -7,7 +7,7 @@ phases:
       - docker login -u yokeshwer -p yokesh@docker
       - echo "Logging in to Amazon ECR..."
       - aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin $ACCOUNT.dkr.ecr.us-east-1.amazonaws.com
-      - WP_URI=$ACCOUNT.dkr.ecr.us-east-1.amazonaws.com/wordpress
+      - WP_URI=$ACCOUNT.dkr.ecr.us-east-1.amazonaws.com/terraform_wordpress
       - echo "Docker Hub login successful."
       - echo "Amazon ECR login successful."
   build:
