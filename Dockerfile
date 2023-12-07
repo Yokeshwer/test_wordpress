@@ -1,4 +1,4 @@
-ROM ubuntu:latest
+FROM ubuntu:latest
 ARG GEOGRAPHIC_AREA=Indian
 
 # Set the time zone based on the selected geographic area
