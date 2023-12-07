@@ -20,15 +20,15 @@
 
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', getenv('DB_NAME') );
+define( 'DB_NAME', 'sample' );
 /** Database username */
-define( 'DB_USER', getenv('DB_USER')  );
+define( 'DB_USER', 'admin'  );
 
 /** Database password */
-define( 'DB_PASSWORD', getenv('DB_PASSWORD') );
+define( 'DB_PASSWORD','wordpress' );
 
 /** Database hostname */
-define( 'DB_HOST', getenv('DB_HOST') );
+define( 'DB_HOST', 'my-rds-instance.c5aciluajqvk.us-east-1.rds.amazonaws.com' );
 
 /** Database charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8' );
